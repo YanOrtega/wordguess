@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <title>Word Guess Arena</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>WORD GUESS ARENA</h1>
+        </header>
+        <main>
+            <div id="start-container">
+                <button id="start-game-btn">Start Game</button>
+            </div>
+            <div id="game-intro">
+                <p>Welcome to Word Guess Arena! Prepare to exercise your brain as you embark on a thrilling journey of word guessing.</p>
+                <br>
+                <h3>Mechanics :</h3>
+                <p>Get ready to unravel words with varying degrees of difficulty. This game is an engaging and entertaining word-guessing game that takes challenges. 
+                Players begin on an educational adventure, attempting to guess random questions in different difficulties (Easy, Moderate, Difficulty). 
+                With just a clue to guide you, can you unravel the mystery word before the hangman is fully drawn? Keep your wits about you as you navigate through levels of increasing complexity. 
+                Let the guessing games commence!
+                </p>
+            </div>
+            <div id="hangman-container" style="display:none;">
+                <div id="difficulty-indicator"></div>
+                <div id="question"></div>
+                <div id="word-display"></div>
+                <div id="guesses-left">Guesses Left: <span id="guesses">3</span></div>
+                <div id="score">Score: <span id="points">0</span></div>
+                <div id="clue-container">
+                    <button id="clue-btn">Get Clue</button>
+                    <div id="clue"></div>
+                </div>
+                <div id="clue-count">Clues Left: <span id="clues-left">3</span></div>
+                <div id="letters"></div>
+                <button id="new-game">New Game</button>
+                <button id="back-button">Back</button>
+            </div>
+            <dialog id="popup">
+                <p id="popup-message"></p>
+                <button id="close-btn">Close</button>
+            </dialog>
+        </main>
+    </div>
+    <footer id="names">
+        <p>Abdullah, Mark Justin | Boncayao, Jesus</p>
+        <p>Dalumpines, Ian | Dapiton, Ryan | Quiambao, Lance Harvey</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

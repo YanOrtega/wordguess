@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    flex: 1;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(247, 227, 186, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Honk', system-ui;
+    font-size: 55px;
+    color: #68112A;
+}
+
+main {
+    text-align: center;
+}
+
+#start-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #E29250;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #DD7C2C;
+}
+
+#difficulty-indicator,
+#question,
+#word-display,
+#guesses-left,
+#score,
+#clue-container,
+#clue-count,
+#letters,
+button {
+    margin-bottom: 10px;
+}
+
+#letters button {
+    background: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+#letters button:hover {
+    background-color: azure;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+#letters button.chosen {
+    background-color: #E29250;
+    color: #e9e2e2;
+}
+
+#names {
+    background-color: rgba(100, 108, 122, 0.3);
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+#difficulty-indicator,
+#question p,
+#word-display {
+    font-size: 20px;
+}
+
+p {
+    font-weight: 600;
+}
+
+#word-display {
+    font-weight: 600;
+}
